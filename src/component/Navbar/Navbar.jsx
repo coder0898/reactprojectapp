@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import style from './Navbar.module.css';
+import { NavLink } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -15,9 +16,9 @@ const Navbar = () => {
         <i className="fa-solid fa-bars"></i>
         </button>
         <ul className={isExpandable ? `${style.nav_list} ${style.expand}`: style.nav_list}>
-            <li>Home</li>
-            <li>Projects</li>
-            <li>About</li>
+            <li><NavLink to='/reactprojectapp' style={{textDecoration:"none"}}>Home</NavLink></li>
+            <li><NavLink to='/project' style={{textDecoration:"none"}}>Projects</NavLink></li>
+            <li><NavLink to='/about' style={{textDecoration:"none"}}>About</NavLink></li>
         </ul>
     </nav>
   )
