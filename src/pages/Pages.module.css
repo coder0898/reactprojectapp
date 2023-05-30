@@ -3,7 +3,10 @@
     justify-content: space-between;
     align-items: center;
     padding:35px;
-    width: 100%;
+    width: 980px;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
 }
 
 .home_container .home_desc{
@@ -56,6 +59,9 @@
 }
 
 @media screen and (max-width:968px) {
+    .home_container{
+        width: 860px;
+    }    
    .home_desc h2{
       font-size: 2rem;
    }
@@ -66,6 +72,9 @@
 }
 
 @media screen and (max-width:900px) {
+    .home_container{
+        width: 760px;
+    }   
     .home_desc h2{
        font-size: 1.8rem;
     }
@@ -82,7 +91,8 @@
         justify-content: center;
         align-items: center;
         padding:35px;
-        width: 100%;
+        width: 500px;
+        margin-top: 5px;
     }
     .home_desc{
         margin-top: 20px;
