@@ -6,6 +6,7 @@ function App() {
     <Navbar/>
     <div className={style.App}>
       <h1>hello world!</h1>
+      <h2>welcome to React project</h2>
     </div>
    </>
   );
