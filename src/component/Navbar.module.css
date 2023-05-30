@@ -1,0 +1,121 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    height: 80px;
+    background-color: #0671F9;
+}
+
+.logo{
+    margin-left: 14px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+.logo h1{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    color: #0671F9;
+}
+
+.nav_list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 24px;
+}
+
+.nav_list li{
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 34px;
+    color: #fff;
+}
+
+.nav_list li:hover{
+    background-color: #fff;
+    color: #0671F9;  
+    border-radius: .5rem; 
+}
+
+.hamburger {
+    /* removes default border on button element */
+    border: 0;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #0671F9;
+    cursor: pointer;
+    text-align: center;
+    display: none;
+  }
+
+  .hamburger:hover {
+    background-color: #fff;
+    color: #0671F9;
+  }
+  
+@media screen and (max-width:968px) {
+   .logo{
+      margin-left: 10px;
+      padding: 10px;      
+   } 
+   .logo h1{
+      font-size: 1.5rem;
+   }
+   .nav_list{
+      margin-right: 5px;
+   }
+   .nav_list li{
+      margin-right: 10px;
+   }
+   .hamburger{
+    display: none;
+   }
+}
+
+@media screen and (max-width:900px) {
+    .hamburger {
+        display: block;
+      }
+    .nav_list{
+        display: none;
+    }
+    .nav_list.expand {
+         /* navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar) */
+         display: block;
+         padding: 24px;
+         position: absolute;
+        top: 80px;
+        left: 0;
+        /* // stacks the li tags vertically  */
+        flex-direction: column;
+       /* // makes menu span full height and width */
+        width: 100%;
+        background-color: #0671F9;
+        border-top: 1px solid black;
+      }
+      .nav_list li {
+        /* // centers link text and strips off margin */
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .nav_list li:hover {
+        background-color: #eee;
+      }
+    }
+
+@media screen and (max-width:600px) {
+    .logo{
+        margin-left:0;
+    } 
+}
