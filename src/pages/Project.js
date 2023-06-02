@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import style from './Pages.module.css';
+import Counter from '../projectcomponent/Couter/Counter';
 
 const Project = () => {
 
@@ -9,7 +10,7 @@ const Project = () => {
 
   const pagesDisplay =()=>{
     if (pageNo === 0) {
-      return projects[pageNo];
+      return <Counter/>;
     } else if(pageNo === 1) {
       return projects[pageNo]; 
     }else{
